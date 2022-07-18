@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakala</title>
+    <link rel="shortcut icon" href="public/favico.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">Bakala</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card m-5">
+            <div class="card-body">
+                <h2 class="card-title">Get All Customers</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customers-table"></tbody>
+                </table>
+                <button id="get-all-customers-button" class="btn btn-primary">Get All
+                    Customers</button>
+            </div>
+        </div>
+
+
+        <div class="card m-5">
+            <div class="card-body">
+                <h2 class="card-title">Get Customer By Id</h2>
+
+                <div class="mb-3">
+                    <label class="form-label" for="">Customer ID:</label>
+                    <input id="get-customer-id-field" type="text" class="form-control">
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="get-customer-table"></tbody>
+                </table>
+                <button id="get-customer-button" class="btn btn-primary">Get
+                    Customer</button>
+            </div>
+        </div>
+
+
+        <div class="card m-5">
+            <div class="card-body">
+                <h2 class="card-title">Add Customer</h2>
+
+                <div class="mb-3">
+                    <label class="form-label" for="">Name:</label>
+                    <input id="add-customer-name" type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="">Email:</label>
+                    <input id="add-customer-email" type="text" class="form-control">
+                </div>
+
+                <button id="add-customer-button" class="btn btn-primary">Add
+                    Customer</button>
+
+                <div id="add-customer-result"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-center">&#169; 2022 Bakala - store management system.</div>
+    </footer>
+
+
+    <script src="./customers.js"></script>
+</body>
+
+</html>
